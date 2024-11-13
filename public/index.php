@@ -1,6 +1,13 @@
 <?php
-  include '../includes/class-autoload.inc.php';
+
+declare(strict_types=1);
+
+include_once '../Views/UsersView.class.php';
+include_once '../Models/Users.class.php';
+include_once '../Controllers/UsersController.class.php';
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,9 +19,9 @@
 <body>
   <?php
     $usersObj = new UsersView();
-    echo $usersObj->showUser('Bertus');
-    $usersObj2 = new UsersContr();
-    $usersObj2->createUser('Iet', 'Sanders', '1999-07-07');
+    $usersObj->showUser('Bertus');
+    $usersObj2 = new UsersController();
+    $usersObj2->createUser('No Giet', 'Sanders', '1999-07-07');
 
   ?>
 </body>
