@@ -2,9 +2,15 @@
 
 declare(strict_types=1);
 
-include_once '../Views/UsersView.class.php';
-include_once '../Models/Users.class.php';
-include_once '../Controllers/UsersController.class.php';
+
+use Views\UsersView;
+use \Controllers\UsersController;
+
+include '../config.php';
+include_once SITE_ROOT . '/src/Views/UsersView.class.php';
+include_once SITE_ROOT . '/src/Models/Users.class.php';
+include_once SITE_ROOT . '/src/Controllers/UsersController.class.php';
+
 
 ?>
 
@@ -19,7 +25,8 @@ include_once '../Controllers/UsersController.class.php';
     <title>Home</title>
 </head>
 <body>
-<?php include_once '../Views/navbar.php' ?>
+<?php
+include_once '../src/Views/navbar.php' ?>
 <div class="container mt-5">
     <h1 class="mb-3">Welcome to ShareBoard!</h1>
     <h2 class="mb-3">Share your latest hot topics with the community</h2>
