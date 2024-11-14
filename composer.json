@@ -1,0 +1,19 @@
+{
+    "name": "b/mvcnl",
+    "description": "PHP application for keeping Blogs",
+    "type": "project",
+    "authors": [
+        {
+            "name": "bertustenhoor",
+            "email": "bertustenhoor@proton.me"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "src/Controllers",
+            "Models\\": "src/Models",
+            "Views\\": "src/Views"
+        }
+    }
+}
