@@ -5,8 +5,6 @@ declare(strict_types=1);
 namespace Views;
 
 use Models\Users;
-//include_once '../../config.php';
-include_once SITE_ROOT . '/src/Models/Users.class.php';
 
 class UsersView extends Users
 {

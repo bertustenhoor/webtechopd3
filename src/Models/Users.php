@@ -3,9 +3,6 @@
 declare(strict_types=1);
 
 namespace Models;
-use Models\Dbh;
-
-include_once 'Dbh.class.php';
 
 class Users extends Dbh
 {

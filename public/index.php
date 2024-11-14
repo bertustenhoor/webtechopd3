@@ -2,16 +2,7 @@
 
 declare(strict_types=1);
 
-
-//use Views\UsersView;
-//use \Controllers\UsersController;
-
-include '../config.php';
-//include_once SITE_ROOT . '/src/Views/UsersView.class.php';
-//include_once SITE_ROOT . '/src/Models/Users.class.php';
-//include_once SITE_ROOT . '/src/Controllers/UsersController.class.php';
-
-include SITE_ROOT . '/vendor/autoload.php';
+require '../vendor/autoload.php';
 
 use Controllers\UsersController;
 use Views\UsersView;
